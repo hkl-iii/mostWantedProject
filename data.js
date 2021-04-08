@@ -1,4 +1,8 @@
 // You may modify this for testing purposes.
+
+let btnGet = document.querySelector('button');
+let myTable = document.querySelector('#table');
+let headers = ['firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 'eyeColor', 'occupation', 'parents', 'currentSpouse'];
 const people = [
 	{
 		"id": 272822514,
@@ -287,3 +291,18 @@ const people = [
 		"currentSpouse": null
 	}
 ];
+
+btnGet.addEventListener('click', () => {
+	let table = document.createElement('table');
+	let headerRow = document.createElement('tr');
+
+	headers.forEach(headerText => {
+		let header = document.createElement('th');
+		let textNode = document.createTextNode(headerText);
+		header.appendChild(textNode);
+		headerRow.appendChild(header);
+	})
+	table.appendChild(headerRow);
+
+	myTable.appendChild(table);
+});

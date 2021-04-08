@@ -10,8 +10,10 @@ function searchByName(){
         if(person.firstName === firstNameInput && person.lastName === lastNameInput){
             return true;
         }
-        return false;
-    });
+            return false;
+            
+        });
+    searchByName();
     
     // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
