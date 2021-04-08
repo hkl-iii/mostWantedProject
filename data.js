@@ -303,6 +303,18 @@ btnGet.addEventListener('click', () => {
 		headerRow.appendChild(header);
 	})
 	table.appendChild(headerRow);
+	people.forEach(ppl => {
+		let row = document.createElement('tr');
+		
+		Object.values(ppl).forEach(text => {
+			let cell = document.createElement('td');
+			let textNode = document.createTextNode(text);
+			cell.appendChild(textNode);
+			row.appendChild(cell);
+		});
+
+		table.appendChild(row);
+	});
 
 	myTable.appendChild(table);
 });
