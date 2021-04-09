@@ -1,9 +1,4 @@
 // You may modify this for testing purposes.
-
-let btnGet = document.querySelector('button');
-let myTable = document.querySelector('#table');
-let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
-'eyeColor', 'occupation', 'parents', 'currentSpouse'];
 const people = [
 	{	//!!!added the id to the headers array. That fixed the data inside the table. OK to 
 		//delete after reading. Ray!!!!
@@ -293,6 +288,11 @@ const people = [
 		"currentSpouse": 
 	}
 ];
+
+let btnGet = document.querySelector('button');
+let myTable = document.querySelector('#table');
+let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
+'eyeColor', 'occupation', 'parents', 'currentSpouse'];
 
 btnGet.addEventListener('click', () => {
 	let table = document.createElement('table');
