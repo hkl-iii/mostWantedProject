@@ -5,6 +5,7 @@ body {
 
 div {
     display: inline-block;
+    overflow: hidden;
 }
 
 button {

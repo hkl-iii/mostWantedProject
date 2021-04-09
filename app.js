@@ -22,7 +22,7 @@ function searchByName(){
     }
 }
 
-
+function populateTable(){
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
 let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
@@ -54,3 +54,4 @@ btnGet.addEventListener('click', () => {
 
 	myTable.appendChild(table);
 });
+}
