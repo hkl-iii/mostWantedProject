@@ -17,3 +17,16 @@ searchAgain(searchByName);
 
 </div>
 </form>
+
+
+
+
+function resetTable(reset){
+let btnGet = document.querySelector('button');
+let myTable = document.querySelector('#table');
+let clearTable = myTable.clear().draw();
+let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
+'eyeColor', 'occupation', 'parents', 'currentSpouse'];
+}
+
+resetTable(clearTable); 
