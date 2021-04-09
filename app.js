@@ -22,6 +22,7 @@ function searchByName(){
     }
 }
 
+
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
 let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
