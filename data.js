@@ -2,9 +2,11 @@
 
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
-let headers = ['ID','firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 'eyeColor', 'occupation', 'parents', 'currentSpouse'];
+let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
+'eyeColor', 'occupation', 'parents', 'currentSpouse'];
 const people = [
-	{
+	{	//!!!added the id to the headers array. That fixed the data inside the table. OK to 
+		//delete after reading. Ray!!!!
 		"id": 272822514,
 		"firstName": "Billy",
 		"lastName": "Bob",

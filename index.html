@@ -3,21 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>devCodeCamp &middot; Most Wanted</title>
+    
   </head>
   <body>
 
-<div>
-  <button>Table</button>
-  <div id="table"></div>
-</div>
+    <div>
+      <button>Table</button>
+      <div id="table"></div>
+    </div class="form">
+    
     <form id="nameForm">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="Joy"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Madden"><br><br>
-        <input type="button" onclick="searchByName()" value="Submit">
-    </form> 
-      
+      <label for="id">ID Number</label><br>
+      <input type="number" id="id" name="id" value=""><br>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="Joy"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Madden"><br><br>
+      <label for="gender">Gender:</label><br>
+      <input type="text" id="gender" name="gender" value=""><br>
+      <label for="dob">Date of Birth:</label><br>
+      <input type="Date" id="dob" name="dob" value=""><br>
+      <label for="height">Height:</label><br>
+      <input type="number" id="height" name="height" value=""><br>        
+      <label for="weight">Weight:</label><br>
+      <input type="number" id="weight" name="weight" value=""><br>
+      <label for="eyes">Eye Color:</label><br>
+      <input type="text" id="eyes" name="eyest" value=""><br>
+      <label for="job">Occupation</label><br>
+      <input type="text" id="job" name="job" value=""><br>
+      <label for="parents">Parents</label><br>
+      <input type="text" id="parents" name="parents" value=""><br>
+      <label for="spouse">Current Spouse</label><br>
+      <input type="text" id="spouse" name="spouse" value=""><br>
+      <input type="button" onclick="searchByName()" value="Submit">
+    </form>       
 
     <script src="data.js"></script>
     <script src="app.js"></script>
