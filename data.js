@@ -2,7 +2,7 @@
 
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
-let headers = ['firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 'eyeColor', 'occupation', 'parents', 'currentSpouse'];
+let headers = ['ID','firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 'eyeColor', 'occupation', 'parents', 'currentSpouse'];
 const people = [
 	{
 		"id": 272822514,
