@@ -7,7 +7,7 @@ function searchByName(){
 
     // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName === firstNameInput || person.lastName === lastNameInput){
+        if(person.firstName === firstNameInput && person.lastName === lastNameInput){
             return true;
         }
             return false;            
@@ -16,7 +16,7 @@ function searchByName(){
     
     // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
-        console.log(filteredPeople);
+        alert(filteredPeople)
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
     }
