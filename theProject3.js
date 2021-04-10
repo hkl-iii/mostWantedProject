@@ -29,4 +29,23 @@ let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight
 'eyeColor', 'occupation', 'parents', 'currentSpouse'];
 }
 
-resetTable(clearTable); 
+
+<script type="text/javascript">
+  function deleteTable(){
+    document.getElementById('div_table').innerHTML="TABLE DELETED"
+  }
+</script>
+
+<div id="div_table">
+
+ <table id="toc" class="toc" border="1" summary="Contents">
+ </table>
+</div>
+<input type="button" onClick="deleteTable()"></input>
+
+
+myTable.innerHTML = "";
+
+let rmTable = document.getElementById('table');
+rmTable.remove();
+

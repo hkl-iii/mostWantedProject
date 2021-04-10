@@ -56,11 +56,20 @@ btnGet.addEventListener('click', () => {
 });
 }
 
+
 function resetTable(){
 	let btnGet = document.querySelector('button');
 	let myTable = document.querySelector('#table');
 	myTable.innerHTML = "";
+	
 	let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
 	'eyeColor', 'occupation', 'parents', 'currentSpouse'];
-	}
 	
+	
+	
+	}
+
+
+	
+	
+
