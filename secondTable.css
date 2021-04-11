@@ -67,30 +67,21 @@ body {
   height: 50px;
 }
 
-.table_wrap ul li .item .name,
-.table_wrap ul li .item .phone {
+.table_wrap ul li .item .id,
+.table_wrap ul li .item .name 
+.table_wrap ul li .item .gender
+.table_wrap ul li .item .dob
+.table_wrap ul li .item .height
+.table_wrap ul li .item .weight
+.table_wrap ul li .item .eyeColor
+.table_wrap ul li .item .occupation
+.table_wrap ul li .item .parents
+.table_wrap ul li .item .currentSpouses
+{
   width: 20%;
   padding: 0 15px;
 }
 
-.table_wrap ul li .item .status {
-  width: 15%;
-  padding: 0 15px;
-}
-
-.table_wrap ul li .item .issue {
-  width: 45%;
-  padding: 0 15px;
-}
-
-.table_wrap ul li .item .issue span,
-.table_wrap ul li .item .name span {
-  width: 90%;
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 
 .table_header ul li .item {
   border-bottom: 2px solid #eaeaea;
@@ -106,39 +97,3 @@ body {
   border-bottom: 1px solid #efefef;
 }
 
-.table_body ul li .item .status span {
-  padding: 5px 20px;
-  border-radius: 25px;
-  max-width: 115px;
-  display: inline-block;
-}
-
-.table_body ul li .item .open {
-  background: #e5edfa;
-  color: #5a8ee4;
-}
-
-.table_body ul li .item .fixed {
-  background: #cff1f0;
-  color: #0dbeb6;
-}
-
-.table_body ul li .item .closed {
-  background: #fedfe5;
-  color: #ff89a0;
-}
-
-.table_body ul li .item .hold {
-  background: #fff0db;
-  color: #f59d39;
-}
-
-.table_body ul li .item .reopened {
-  background: #d6f2ff;
-  color: #29a5d8;
-}
-
-.table_body ul li .item .canceled {
-  background: #ffdbd6;
-  color: #e87060;
-}
