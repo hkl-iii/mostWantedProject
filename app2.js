@@ -1,6 +1,6 @@
 "use strict";
 
-var search_input = document.querySelector("#search_input");
+let search_input = document.querySelector("#search_input");
 
 search_input.addEventListener("keyup", function(e){
   let span_items = document.querySelectorAll(".table_body .name span");
