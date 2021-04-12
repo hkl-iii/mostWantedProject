@@ -22,11 +22,26 @@ function searchByName(){
     }
 }
 
-function populateTable(){
+function populateTable(people){
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
 let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
 'eyeColor', 'occupation', 'parents', 'currentSpouse'];
+
+// TODO: Select just the table by id
+// TODO:¨Write the entire array of people to the table
+
+//new function below written by instructor.
+people.map(function(person){
+
+myTable.innerHTML += `${person.id}
+<tr><td>${person.name}</td></tr>
+`
+
+})
+
+
+
 
 btnGet.addEventListener('click', () => {
 	let table = document.createElement('table');
