@@ -206,8 +206,8 @@ function searchBySpouse(){
 function populateTable(people){
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
-let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
-'eyeColor', 'occupation', 'parents', 'currentSpouse'];
+let headers = ['ID', 'FIRST NAME', 'LAST NAME', 'GENDER', 'DOB', 'HEIGHT', 'WEIGHT', 
+'EYE COLOR', 'OCCUPATION', 'PARENTS', 'CURRENT SPOUSE'];
 
 // TODO: Select just the table by id
 // TODO:¨Write the entire array of people to the table
