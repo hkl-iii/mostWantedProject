@@ -19,6 +19,8 @@ function searchById(){
 function searchByName(){
     let firstNameInput = document.forms['nameForm']['fname'].value;
     let lastNameInput = document.forms['nameForm']['lname'].value;
+    
+
 
     
     let filteredPeople = people.filter(function (person) {
@@ -206,17 +208,11 @@ function searchBySpouse(){
 function populateTable(people){
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
-let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
-'eyeColor', 'occupation', 'parents', 'currentSpouse'];
+document.getElementById("table").style.display = "none"
+let headers = ['ID', 'First Name', 'Last Name', 'Gender', 'DOB', 'Height', 'Weight', 
+'EyeColor', 'Occupation', 'Parents', 'Current Spouse'];
 
-// TODO: Select just the table by id
-// TODO:¨Write the entire array of people to the table
-
-//new function below written by instructor.
-
-
-
- btnGet.addEventListener('click', () => {
+ 
 	let table = document.createElement('table');
 	let headerRow = document.createElement('tr');
 
@@ -225,7 +221,7 @@ let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight
 		let textNode = document.createTextNode(headerText);
 		header.appendChild(textNode);
 		headerRow.appendChild(header);
-	})
+	});
 	table.appendChild(headerRow);
 	people.forEach(ppl => {
 		let row = document.createElement('tr');
@@ -240,19 +236,22 @@ let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight
 		table.appendChild(row);
 	});
 
-	myTable.appendChild(table);
-});
+	    myTable.appendChild(table);
+        
 }
+
 populateTable(people);
 
 
-function resetTable(){
-	let btnGet = document.querySelector('button');
+function showTable(){
+	let btnGet = document.getElementById('showBtn');
 	let myTable = document.querySelector('#table');
-	myTable.innerHTML = "";
-	
-	let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight', 
-	'eyeColor', 'occupation', 'parents', 'currentSpouse'];
+    document.getElementById("table").style.display = "block";	
+}
+function clearTable(){
+	let btnGet = document.getElementById('clearBtn');
+	let myTable = document.querySelector('#table');
+	document.getElementById("table").style.display = "none";
 	
 }
 
