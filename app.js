@@ -1,20 +1,14 @@
 'use strict';
 
 function searchById(){
-    // Grabbing the values from our nameForm form and inputs.
     let idInput = document.forms['nameForm']['id'].value;
-    
-
-    // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
         if(person.id == idInput){
             return true;
         }
             return false;            
         });
-        
-    
-    // Rather than console logging, you need to append the filteredPeople to a table.
+
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
@@ -42,11 +36,7 @@ function searchByName(){
 }
 
 function searchByFirstName(){
-    // Grabbing the values from our nameForm form and inputs.
     let firstNameInput = document.forms['nameForm']['fname'].value;
-    
-
-    // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
         if(person.firstName === firstNameInput){
             return true;
@@ -54,9 +44,6 @@ function searchByFirstName(){
             return false;            
     });
         
-
-    
-    // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
@@ -64,13 +51,8 @@ function searchByFirstName(){
     }
 }
 
-function searchByLastName(){
-    // Grabbing the values from our nameForm form and inputs.
-    
+function searchByLastName(){    
     let lastNameInput = document.forms['nameForm']['lname'].value;
-    
-
-    // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
         if(person.lastName === lastNameInput){
             return true;
@@ -78,8 +60,6 @@ function searchByLastName(){
             return false;            
         });
 
-    
-    // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
@@ -88,21 +68,14 @@ function searchByLastName(){
 }
 
 
-function searchByGender(){
-    // Grabbing the values from our nameForm form and inputs.
+function searchByGender() {
     let genderInput = document.forms['nameForm']['gender'].value;
-    
-    // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
         if(person.gender === genderInput){
             return true;
         }
             return false;            
         });
-        
-
-    
-    // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
@@ -111,21 +84,13 @@ function searchByGender(){
 }
 
 function searchByDob(){
-    // Grabbing the values from our nameForm form and inputs.
     let dobInput = document.forms['nameForm']['dob'].value;
-    
-
-    // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
         if(person.dob == dobInput){
             return true;
         }
             return false;            
         });
-        
-
-    
-    // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
@@ -136,13 +101,9 @@ function searchByDob(){
 
 
 function searchByHeight(){
-    // Grabbing the values from our nameForm form and inputs.
     let heightInput = document.forms['nameForm']['height'].value;
-    let weightinput = document.forms['nameForm']['height'].value;
-
-    // "people" is coming from the data.js file. We have access to it within this JavaScript file.
     let filteredPeople = people.filter(function (person) {
-        if(person.height === heightInput || person.weight === weightinput){
+        if(person.height == heightInput){
             return true;
         }
             return false;            
@@ -170,6 +131,7 @@ function searchByWeight(){
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
+    }
 } 
 
 
@@ -177,12 +139,17 @@ function searchByEyeColor(){
 	let eyeColorInput = document.forms['nameForm']['eyes'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.eyeColor == eyeColorInput){
+		if(person.eyeColor === eyeColorInput){
 			return true;
 		}else{
 			return false;
 		}
 	})
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        alert('Sorry, looks like there is no one who matches that criteria.');
+    }
 }
 
 function searchByJob(){
@@ -195,6 +162,11 @@ function searchByJob(){
 			return false;
 		}
 	})
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        alert('Sorry, looks like there is no one who matches that criteria.');
+    }
 }
 
 function searchByParents(){
@@ -207,6 +179,11 @@ function searchByParents(){
 			return false;
 		}
 	})
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        alert('Sorry, looks like there is no one who matches that criteria.');
+    }
 }
 
 function searchBySpouse(){
@@ -219,6 +196,11 @@ function searchBySpouse(){
 			return false;
 		}
 	})
+    if(filteredPeople.length > 0){
+        console.log(filteredPeople);
+    }else{
+        alert('Sorry, looks like there is no one who matches that criteria.');
+    }
 }
 
 function populateTable(people){
@@ -262,7 +244,7 @@ let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight
 });
 }
 populateTable(people);
-}
+
 
 function resetTable(){
 	let btnGet = document.querySelector('button');
