@@ -3,7 +3,7 @@
 function searchById(){
     let idInput = document.forms['nameForm']['id'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.id == idInput){
+        if(person.id == idInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -24,7 +24,7 @@ function searchByName(){
 
     
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName === firstNameInput && person.lastName === lastNameInput){
+        if(person.firstName === firstNameInput.toLowerCase() && person.lastName === lastNameInput.toLowerCase()){
             return true;
         }
             return false;		           
@@ -40,7 +40,7 @@ function searchByName(){
 function searchByFirstName(){
     let firstNameInput = document.forms['nameForm']['fname'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName === firstNameInput){
+        if(person.firstName === firstNameInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -56,7 +56,7 @@ function searchByFirstName(){
 function searchByLastName(){    
     let lastNameInput = document.forms['nameForm']['lname'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.lastName === lastNameInput){
+        if(person.lastName === lastNameInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -71,9 +71,9 @@ function searchByLastName(){
 
 
 function searchByGender() {
-    let genderInput = document.forms['nameForm']['gender'].value;
+    let genderInput= document.forms['nameForm']['gender'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.gender === genderInput){
+        if(person.gender === genderInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -105,7 +105,7 @@ function searchByDob(){
 function searchByHeight(){
     let heightInput = document.forms['nameForm']['height'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.height == heightInput){
+        if(person.height == heightInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -123,7 +123,7 @@ function searchByWeight(){
 	let weightInput = document.forms['nameForm']['weight'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.weight == weightInput){
+		if(person.weight == weightInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -141,7 +141,7 @@ function searchByEyeColor(){
 	let eyeColorInput = document.forms['nameForm']['eyes'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.eyeColor === eyeColorInput){
+		if(person.eyeColor === eyeColorInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -158,7 +158,7 @@ function searchByJob(){
 	let jobInput = document.forms['nameForm']['job'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.occupation == jobInput){
+		if(person.occupation == jobInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -175,7 +175,7 @@ function searchByParents(){
 	let parentsInput = document.forms['nameForm']['parents'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.parents == parentsInput){
+		if(person.parents == parentsInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -192,7 +192,7 @@ function searchBySpouse(){
 	let spouseInput = document.forms['nameForm']['spouse'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.spouse == spouseInput){
+		if(person.spouse == spouseInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
