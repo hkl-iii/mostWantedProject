@@ -171,8 +171,7 @@ function searchById(){
         }
             return false;            
         });
-		buildTable(filteredPeople);
-
+		
     
     // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
@@ -195,7 +194,7 @@ function searchByFirstName(){
         }
             return false;            
         });
-		buildTable(filteredPeople);
+		
 
     
     // Rather than console logging, you need to append the filteredPeople to a table.
