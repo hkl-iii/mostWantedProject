@@ -1,20 +1,17 @@
 'use strict';
 
 function searchByName(){
-    // Grabbing the values from our nameForm form and inputs.
     let firstNameInput = document.forms['nameForm']['fname'].value;
     let lastNameInput = document.forms['nameForm']['lname'].value;
 
-    // "people" is coming from the data.js file. We have access to it within this JavaScript file.
+    
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName === firstNameInput || person.lastName === lastNameInput){
+        if(person.firstName === firstNameInput && person.lastName === lastNameInput){
             return true;
         }
-            return false;            
-        });
-
+            return false;		           
+    });
     
-    // Rather than console logging, you need to append the filteredPeople to a table.
     if(filteredPeople.length > 0){
         console.log(filteredPeople);
     }else{
@@ -22,6 +19,67 @@ function searchByName(){
     }
 }
 
+
+function searchByWeight(){
+	let eyeColorInput = document.forms['nameForm']['weight'].value;
+
+	let filteredPeople = people.filter(function(person){
+		if(person.weight == weightInput){
+			return true;
+		}else{
+			return false;
+		}
+	})
+}
+
+
+function searchByEyeColor(){
+	let eyeColorInput = document.forms['nameForm']['eyes'].value;
+
+	let filteredPeople = people.filter(function(person){
+		if(person.eyeColor == eyeColorInput){
+			return true;
+		}else{
+			return false;
+		}
+	})
+}
+
+function searchByJob(){
+	let eyeColorInput = document.forms['nameForm']['job'].value;
+
+	let filteredPeople = people.filter(function(person){
+		if(person.occupation == eyeColorInput){
+			return true;
+		}else{
+			return false;
+		}
+	})
+}
+
+function searchByParents(){
+	let eyeColorInput = document.forms['nameForm']['parents'].value;
+
+	let filteredPeople = people.filter(function(person){
+		if(person.parents == parentsInput){
+			return true;
+		}else{
+			return false;
+		}
+	})
+}
+
+function searchBySpouse(){
+	let eyeColorInput = document.forms['nameForm']['spouse'].value;
+
+	let filteredPeople = people.filter(function(person){
+		if(person.spouse == spouseInput){
+			return true;
+		}else{
+			return false;
+		}
+	})
+}
 function populateTable(people){
 let btnGet = document.querySelector('button');
 let myTable = document.querySelector('#table');
@@ -32,16 +90,6 @@ let headers = ['id', 'firstName', 'lastName', 'gender', 'dob', 'height', 'weight
 // TODO:¨Write the entire array of people to the table
 
 //new function below written by instructor.
-people.map(function(person){
-
-myTable.innerHTML += `${person.id}
-<tr><td>${person.name}</td></tr>
-`
-
-})
-
-
-
 
 btnGet.addEventListener('click', () => {
 	let table = document.createElement('table');
