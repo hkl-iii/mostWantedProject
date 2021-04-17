@@ -3,7 +3,7 @@
 function searchById(){
     let idInput = document.forms['nameForm']['id'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.id == idInput.toLowerCase()){
+        if(person.id.toLowerCase() == idInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -24,7 +24,7 @@ function searchByName(){
 
     
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName === firstNameInput.toLowerCase() && person.lastName === lastNameInput.toLowerCase()){
+        if(person.firstName.toLowerCase() === firstNameInput.toLowerCase() && person.lastName.toLowerCase() === lastNameInput.toLowerCase()){
             return true;
         }
             return false;		           
@@ -40,7 +40,7 @@ function searchByName(){
 function searchByFirstName(){
     let firstNameInput = document.forms['nameForm']['fname'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName === firstNameInput.toLowerCase()){
+        if(person.firstName.toLowerCase() === firstNameInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -56,7 +56,7 @@ function searchByFirstName(){
 function searchByLastName(){    
     let lastNameInput = document.forms['nameForm']['lname'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.lastName === lastNameInput.toLowerCase()){
+        if(person.lastName.toLowerCase() === lastNameInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -73,7 +73,7 @@ function searchByLastName(){
 function searchByGender() {
     let genderInput= document.forms['nameForm']['gender'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.gender === genderInput.toLowerCase()){
+        if(person.gender.toLowerCase() === genderInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -105,7 +105,7 @@ function searchByDob(){
 function searchByHeight(){
     let heightInput = document.forms['nameForm']['height'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.height == heightInput.toLowerCase()){
+        if(person.height.toLowerCase() == heightInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -123,7 +123,7 @@ function searchByWeight(){
 	let weightInput = document.forms['nameForm']['weight'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.weight == weightInput.toLowerCase()){
+		if(person.weight.toLowerCase() == weightInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -141,7 +141,7 @@ function searchByEyeColor(){
 	let eyeColorInput = document.forms['nameForm']['eyes'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.eyeColor === eyeColorInput.toLowerCase()){
+		if(person.eyeColor.toLowerCase() === eyeColorInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -158,7 +158,7 @@ function searchByJob(){
 	let jobInput = document.forms['nameForm']['job'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.occupation == jobInput.toLowerCase()){
+		if(person.occupation.toLowerCase() == jobInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -175,7 +175,7 @@ function searchByParents(){
 	let parentsInput = document.forms['nameForm']['parents'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.parents == parentsInput.toLowerCase()){
+		if(person.parents.toLowerCase() == parentsInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
@@ -192,7 +192,7 @@ function searchBySpouse(){
 	let spouseInput = document.forms['nameForm']['spouse'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.spouse == spouseInput.toLowerCase()){
+		if(person.spouse.toLowerCase() == spouseInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
