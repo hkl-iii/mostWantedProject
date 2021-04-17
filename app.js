@@ -24,7 +24,7 @@ function searchByName(){
 
     
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName.toLowerCase() === firstNameInput.toLowerCase() && person.lastName.toLowerCase() === lastNameInput.toLowerCase()){
+        if(person.firstName.toLowerCase() == firstNameInput.toLowerCase() && person.lastName.toLowerCase() === lastNameInput.toLowerCase()){
             return true;
         }
             return false;		           
@@ -40,7 +40,7 @@ function searchByName(){
 function searchByFirstName(){
     let firstNameInput = document.forms['nameForm']['fname'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.firstName.toLowerCase() === firstNameInput.toLowerCase()){
+        if(person.firstName.toLowerCase() == firstNameInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -56,7 +56,7 @@ function searchByFirstName(){
 function searchByLastName(){    
     let lastNameInput = document.forms['nameForm']['lname'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.lastName.toLowerCase() === lastNameInput.toLowerCase()){
+        if(person.lastName.toLowerCase() == lastNameInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -73,7 +73,7 @@ function searchByLastName(){
 function searchByGender() {
     let genderInput= document.forms['nameForm']['gender'].value;
     let filteredPeople = people.filter(function (person) {
-        if(person.gender.toLowerCase() === genderInput.toLowerCase()){
+        if(person.gender.toLowerCase() == genderInput.toLowerCase()){
             return true;
         }
             return false;            
@@ -141,7 +141,7 @@ function searchByEyeColor(){
 	let eyeColorInput = document.forms['nameForm']['eyes'].value;
 
 	let filteredPeople = people.filter(function(person){
-		if(person.eyeColor.toLowerCase() === eyeColorInput.toLowerCase()){
+		if(person.eyeColor.toLowerCase() == eyeColorInput.toLowerCase()){
 			return true;
 		}else{
 			return false;
