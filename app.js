@@ -10,6 +10,7 @@ function searchById(){
         });
 
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -31,6 +32,7 @@ function searchByName(){
     });
     
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -47,6 +49,7 @@ function searchByFirstName(){
     });
         
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -63,6 +66,7 @@ function searchByLastName(){
         });
 
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -79,6 +83,7 @@ function searchByGender() {
             return false;            
         });
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -94,6 +99,7 @@ function searchByDob(){
             return false;            
         });
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -112,6 +118,7 @@ function searchByHeight(){
         });
 
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -130,6 +137,7 @@ function searchByWeight(){
 		}
 	})
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -148,6 +156,7 @@ function searchByEyeColor(){
 		}
 	})
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -165,6 +174,7 @@ function searchByJob(){
 		}
 	})
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -182,6 +192,7 @@ function searchByParents(){
 		}
 	})
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
@@ -199,6 +210,7 @@ function searchBySpouse(){
 		}
 	})
     if(filteredPeople.length > 0){
+        populateTable(filteredPeople);
         console.log(filteredPeople);
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
