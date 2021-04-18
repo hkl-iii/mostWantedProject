@@ -12,6 +12,7 @@ function searchById(){
     if(filteredPeople.length > 0){
         populateTable(filteredPeople);
         console.log(filteredPeople);
+        
     }else{
         alert('Sorry, looks like there is no one who matches that criteria.');
     }
@@ -263,8 +264,7 @@ function showTable(){
 function clearTable(){
 	let btnGet = document.getElementById('clearBtn');
 	let myTable = document.querySelector('#table');
-	document.getElementById("table").style.display = "none";
-	
+	document.getElementById('table').style.display = "none";
 }
 
 
