@@ -1,10 +1,11 @@
 "use strict";
 
 var search_input = document.querySelector("#search_input");
+var  table_body = document.querySelector(".table_body ul");
 
 search_input.addEventListener("keyup", function(e){
   var span_items = document.querySelectorAll(".table_body .name span");
-  var table_body = document.querySelector(".table_body ul");
+  table_body = document.querySelector(".table_body ul");
   var search_item = e.target.value.toLowerCase();
  
  span_items.forEach(function(item){
